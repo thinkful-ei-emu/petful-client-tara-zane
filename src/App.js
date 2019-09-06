@@ -1,13 +1,18 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import LandingPage from './Pages/LandingPage';
+import {Route} from 'react-router-dom';
 
-function App() {
+class App extends React.component {
+
+render(){
   return (
     <div className="App">
-     
+     <Route path='/' component={LandingPage}/>
     </div>
   );
+}
 }
 
 export default App;
