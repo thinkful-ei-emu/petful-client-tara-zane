@@ -4,6 +4,10 @@
   border: 1px solid black;
 }
 
+.usersection {
+  display: block;
+}
+
 .active-user {
   background-color: cyan;
 }
