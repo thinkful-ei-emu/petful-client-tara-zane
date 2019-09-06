@@ -1,8 +1,8 @@
-import config from '../src/config'
+import config from '../config'
 
 
 
-const catApiService={
+const dogApiService={
   getDog(){
     return fetch(`${config.API_ENDPOINT}/dog`)
     .then(res =>
@@ -11,7 +11,7 @@ const catApiService={
   },
 
   deleteCat(id){
-    return fetch(`${config.API_ENDPOINT}/dog/${id}`,{
+    return fetch(`${config.API_ENDPOINT}/dog`,{
       method: 'DELETE',
       headers:{
         'content-type': 'application/json'
@@ -21,3 +21,5 @@ const catApiService={
 
   }
 }
+
+export default dogApiService;

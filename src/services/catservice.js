@@ -1,4 +1,4 @@
-import config from '../src/config'
+import config from '../config'
 
 
 
@@ -11,7 +11,7 @@ const catApiService={
   },
 
   deleteCat(id){
-    return fetch(`${config.API_ENDPOINT}/cat/${id}`,{
+    return fetch(`${config.API_ENDPOINT}/cat`,{
       method: 'DELETE',
       headers:{
         'content-type': 'application/json'
@@ -21,3 +21,4 @@ const catApiService={
 
   }
 }
+export default catApiService;
