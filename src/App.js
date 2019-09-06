@@ -4,7 +4,7 @@ import './App.css';
 import LandingPage from './Pages/LandingPage';
 import {Route} from 'react-router-dom';
 
-class App extends React.component {
+class App extends React.Component {
 
 render(){
   return (
