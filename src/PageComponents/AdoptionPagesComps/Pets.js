@@ -3,12 +3,12 @@ import React from "react";
 export default function Pets(props) {
 
 
-  let cats= props.cats
-  console.log(cats.map(cat=>console.log(cat.name)))
+  let cats= props.cats[0].name
+
   
   
   
- console.log(props.cats)
+ console.log(cats)
  if(props.cats){
    return (<div>
      <p>{}</p>

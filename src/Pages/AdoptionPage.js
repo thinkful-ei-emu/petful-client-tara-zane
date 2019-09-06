@@ -16,8 +16,9 @@ export default class AdoptionPage extends React.Component{
  
 
  componentDidMount(){
-   CatServices.getCat().then(res=>this.setState({cats:res},()=>{ console.log(this.state)}))
-   DogServices.getDog().then(res=>this.setState({dogs:res}))
+  DogServices.getDog().then(res=>this.setState({dogs:res}),()=>{console.log(this.state)})
+  CatServices.getCat().then(res=>this.setState({cats:res},()=>{ console.log(this.state)}))
+  
   
 
  }
