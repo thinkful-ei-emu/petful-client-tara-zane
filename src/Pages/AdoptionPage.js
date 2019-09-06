@@ -18,7 +18,9 @@ export default class AdoptionPage extends React.Component{
    DogServices.getDog().then(res=>this.setState({dogs:res}));
    UserServices.getUser().then(res=>this.setState({users:res}));
 
-   this.interval = setInterval(this.switchUser(), 1000);
+   this.interval = setInterval(() => {
+     this.switchUser();
+   }, 10000);
  }
 
  switchUser() {

@@ -5,7 +5,7 @@ class UserQueue extends React.Component {
 
   renderUsers() {
     const usersarray = this.props.users.map((user, index) => {
-      return <div className={`user ${index===0 && "active-user"}`}>{user.name}</div>
+      return <div key={index} className={`user ${index===0 && "active-user"}`}>{user.name}</div>
     })
 
     return usersarray;

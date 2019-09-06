@@ -1,0 +1,12 @@
+.adoptedAnimal {
+  border: 1px solid black;
+  display: inline-block;
+  width: 310px;
+  height: 450px;
+}
+
+.adopted-animal-pic {
+  width: 300px;
+  height: 300px;
+  object-fit: none;
+}
