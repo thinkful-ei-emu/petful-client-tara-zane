@@ -10,7 +10,7 @@ const dogApiService={
     );
   },
 
-  deleteCat(id){
+  deleteDog(){
     return fetch(`${config.API_ENDPOINT}/dog`,{
       method: 'DELETE',
       headers:{
