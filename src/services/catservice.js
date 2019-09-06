@@ -10,7 +10,7 @@ const catApiService={
     );
   },
 
-  deleteCat(id){
+  deleteCat(){
     return fetch(`${config.API_ENDPOINT}/cat`,{
       method: 'DELETE',
       headers:{
