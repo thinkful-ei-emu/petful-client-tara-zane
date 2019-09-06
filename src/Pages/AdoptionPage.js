@@ -24,6 +24,31 @@ export default class AdoptionPage extends React.Component{
  switchUser() {
    UserServices.switchUser().then(res=>this.setState({users:res}));
  }
+ removeDog=(e)=>{
+   DogServices.deleteDog()
+  let oneLess=[...this.state.dogs]
+  oneLess.shift();
+  console.log(this.switchUser)
+  this.switchUser();
+  
+  
+  this.setState({dogs:oneLess})
+ 
+ }
+
+ removeCat=(e)=>{
+  CatServices.deleteCat()
+ let oneLess=[...this.state.cats]
+ oneLess.shift();
+ this.switchUser();
+ 
+ 
+ this.setState({cats:oneLess})
+
+
+}
+
+ 
   render(){
     if(this.state.cats !==null){
       
@@ -31,7 +56,7 @@ export default class AdoptionPage extends React.Component{
    return(
      <div>
        <Header/>
-       <Pets cats={this.state.cats} dogs={this.state.dogs}/>
+       <Pets cats={this.state.cats} dogs={this.state.dogs} ad={this.removeDog} ac={this.removeCat} />
        <UserQueue users={this.state.users} />
 
      </div>

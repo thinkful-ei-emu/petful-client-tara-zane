@@ -1,0 +1,8 @@
+.pet-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.adopted-animal-pic { width: 300px; height: 300px; object-fit: none; }
