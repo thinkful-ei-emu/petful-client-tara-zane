@@ -34,7 +34,7 @@ export default class Pets extends React.Component {
             <p>Breed: {animals[this.state.index].breed}</p>
             <p>Age: {animals[this.state.index].age}</p>
             <p>Story: {animals[this.state.index].story}</p>
-            {this.state.index===0 && <button onClick={() => this.props.remove()}>Adopt!</button>}
+            {this.state.index===0 && <button onClick={() => this.props.adopt()}>Adopt!</button>}
             {this.state.index!==0 && <button onClick={this.back}>Previous animal!</button>}
             {this.state.index<animals.length-1 && <button onClick={this.next}>Next animal!</button>}
         </div>
